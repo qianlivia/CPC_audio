@@ -1,4 +1,4 @@
-name: cpc37
+name: cpc37v2
 channels:
   - pytorch
   - anaconda
@@ -7,7 +7,8 @@ channels:
 dependencies:
   - pytorch
   - torchvision
-  - cudatoolkit=9.2
+  - torchaudio
+  - cudatoolkit=11.3
   - psutil
   - pip
   - openblas-devel
@@ -18,4 +19,5 @@ dependencies:
   - pip:
     - progressbar2
     - matplotlib
-    - torchaudio
+
+#conda remove --force libsndfile
